@@ -1,0 +1,47 @@
+header {
+    background: rgba(21,80,168);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  nav {
+    float: left;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+  }
+    nav ul li a {
+        display: block; 
+        padding: 20px;
+        color: #000000;
+        text-decoration: none;
+      }  
+    nav ul li:hover {
+        background: #ffffff;
+  }
+body {
+    background-color: rgb(21, 80, 168);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Color del texto antes del hover */
+    position: left;
+    display: inline-block;
+}
+
+a p {
+    opacity: 1; /* Inicialmente oculto */
+    transition: opacity 0.5s ease;
+
+}
+a:hover p {
+    opacity: 0.5; /* Mostrar el texto al pasar el ratón */
+}
