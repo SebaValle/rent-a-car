@@ -1,14 +1,33 @@
+# rent/views.py
+
 from django.shortcuts import render
-from django.http import HttpResponse
-# Create your views here.
 
 def index(request):
-    context={}
-    return render(request,'index.html',context)
+    context = {
+        'title': 'Austral Rent a Car - Inicio',
+    }
+    return render(request, 'index.html', context)
 
 def admin(request):
-    context={}
-    return render(request,'html/admin.html',context)
+    context = {
+        'title': 'Austral Rent a Car - Administración',
+    }
+    return render(request, 'html/admin.html', context)
 
+def vehiculos(request):
+    context = {
+        'title': 'Austral Rent a Car - Vehículos',
+    }
+    return render(request, 'vehiculos.html', context)
 
+def nosotros(request):
+    context = {
+        'title': 'Austral Rent a Car - Nosotros',
+    }
+    return render(request, 'nosotros.html', context)
 
+def registro(request):
+    context = {
+        'title': 'Austral Rent a Car - Registro',
+    }
+    return render(request, 'registro.html', context)
