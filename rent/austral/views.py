@@ -8,7 +8,7 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
-def admin(request):
+def admin2(request):
     context = {
         'title': 'Austral Rent a Car - Administración',
     }
@@ -24,10 +24,8 @@ def nosotros(request):
     context = {
         'title': 'Austral Rent a Car - Nosotros',
     }
-    return render(request, 'nosotros.html', context)
+    return render(request, 'equipo.html', context)
 
-def registro(request):
-    context = {
-        'title': 'Austral Rent a Car - Registro',
-    }
-    return render(request, 'registro.html', context)
+def login(request):
+    contexto = {}
+    return render(request,'login.html',contexto);

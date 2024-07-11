@@ -27,11 +27,11 @@ class Auto(models.Model):
     nombre            = models.CharField(max_length=20)
     color             = models.CharField(max_length=20)
     cantidad_pasajeros= models.CharField(max_length=20)
-    annio            = models.DateField(blank=False, null=False) 
-    id_auto          = models.ForeignKey('Auto',on_delete=models.CASCADE, db_column='idauto')  
-    tipo_vehiculo    = models.CharField(max_length=45)
-    combustible      = models.EmailField(unique=True, max_length=100, blank=True, null=True)
-    valor            = models.IntegerField( blank=True, null=True)  
+    annio             = models.DateField(blank=False, null=False) 
+    id_auto           = models.CharField(max_length=20) 
+    tipo_vehiculo     = models.CharField(max_length=45)
+    combustible       = models.CharField(unique=True, max_length=100, blank=True, null=True)
+    valor             = models.IntegerField( blank=True, null=True)  
 
     def __str__(self):
         return str(self.Marca)+" "+str(self.nombre) 
